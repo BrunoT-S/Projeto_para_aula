@@ -1,0 +1,14 @@
+{% extends "Base.html" %}
+
+{% block title %} SignUp page {% endblock %}
+
+{% block content %} 
+
+	<form action="{% url 'Signup' %}" method = 'post'>
+	{% csrf_token %}
+	{{form}}
+	<input type='submit' value='Cadastre-se'>
+	</form>
+
+
+{% endblock %}

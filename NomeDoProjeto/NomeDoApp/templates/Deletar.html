@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deletar</title>
+</head>
+<body>
+	<p>Tem certeza que dezeja excluir o usuário {{obj.nome}}?</p>
+	<form method="POST" autocomplete = "off">
+		{%csrf_token%}
+		
+		<input type="submit" value="Submit"/>
+	</form>
+</body>
+</html>

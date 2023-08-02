@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+</head>
+<body>
+		<form method="POST" autocomplete = "off">
+		{%csrf_token%}
+		{{form.nome}}
+		{{form.cidade}}
+		<!-- ou {{fomr.as_p}}-->
+		<input type="submit" value="Submit"/>
+	</form>
+
+</body>
+</html>

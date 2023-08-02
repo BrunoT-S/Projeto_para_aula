@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ver</title>
+</head>
+<body>
+{%for i in obj%}
+		{{i.nome}}
+			<br>
+		{{i.cidade}}
+			<br>
+		{{i.criacao}}
+			<br>
+		<a href="{%url 'Update' i.id %}">Realizar Update</a>
+		<a href="{%url 'Delete' i.id %}">Apagar dado</a>
+		<br><br><br>
+		<p>.............................................</p>
+{%endfor%}
+
+</body>
+</html>

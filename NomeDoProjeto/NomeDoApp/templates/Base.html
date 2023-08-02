@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Titulo Genérico {% endblock %}</title>
+</head>
+<body>
+<form action='{% url "Logout" %}' method = 'post'>
+{% csrf_token %}
+<button type='submit'>Sair da Conta</button>
+</form>
+
+{% block content %} Página vazia {% endblock %}
+
+</body>
+</html>
